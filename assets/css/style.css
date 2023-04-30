@@ -1,0 +1,984 @@
+/* подключение шрифта Poppins ------------------------------ */
+@font-face {
+    /* обычный */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins') url(/assets/fonts/Poppins.woff2/Poppins-Regular.woff2) format('woff'),
+        url(/assets/fonts/Poppins.woff/Poppins-Regular.woff) format('woff');
+}
+
+@font-face {
+    /* курсив */
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Poppins') url(/assets/fonts/Poppins.woff2/Poppins-Italic.woff2) format('woff'),
+        url(/assets/fonts/Poppins.woff/Poppins-Italic.woff) format('woff');
+}
+
+@font-face {
+    /* жирный */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Poppins') url(/assets/fonts/Poppins.woff2/Poppins-Bold.woff2) format('woff'),
+        url(/assets/fonts/Poppins.woff/Poppins-Bold.woff) format('woff');
+}
+
+@font-face {
+    /* жирный курсив */
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Poppins') url(/assets/fonts/Poppins.woff2/Poppins-BoldItalic.woff2) format('woff'),
+        url(/assets/fonts/Poppins.woff//Poppins-BoldItalic.woff) format('woff');
+}
+
+/* отключение стилей определенных тегов ------------------------------ */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 90px;
+    background-color: black;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+/* блокировка ширины верхней панели ------------------------------ */
+.lock-width {
+    position: absolute;
+    left: 6%;
+    right: 2.5%;
+}
+
+/* верхняя панель ------------------------------ */
+.header-panel {
+    max-height: 90px;
+}
+
+.header-panel-logo {
+    float: left;
+    padding: 30px 0 0 60px;
+}
+
+.header-panel-menu {
+    float: right;
+    margin: 24px 0 0 0;
+    height: 60px;
+    width: 800px;
+}
+
+.header-panel-menu-item {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+/* псевдоклассы ссылок верхней панели ------------------------------ */
+a.link-item:visited {
+    color: white;
+}
+
+a.link-item:hover {
+    color: rgb(89, 180, 85);
+}
+
+a.link-item:focus {
+    color: rgb(63, 125, 60);
+}
+
+button.item-button:hover {
+    background-color: rgb(89, 180, 85);
+}
+
+button.item-button:focus {
+    background-color: rgb(63, 125, 60);
+}
+
+/* стили элементов верхней панели ------------------------------ */
+.item-one {
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.item-two {
+    padding-left: 60px;
+}
+
+.item-three {
+    padding-left: 30px;
+}
+
+.item-four {
+    padding-left: 30px;
+}
+
+.item-button {
+    margin-left: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 12px;
+    background: #FFFFFF;
+    color: black;
+    padding: 6px 23px 10px 23px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* конец header - начало section-one ------------------------------ */
+.section-one {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    min-width: 1200px;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-image: url(../image/section-one-background.svg);
+    background-size: cover;
+    background-position: 50% 20%;
+    font-size: 12;
+}
+
+/* текст первой секции ------------------------------ */
+.section-one-text {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    left: 0;
+    right: 0;
+    margin: 550px auto 0 auto;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.section-one-text-one {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.section-one-text-two {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.section-one-text-three {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* объекты первой секции ------------------------------ */
+.section-one-item {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    margin: 800px 0 0 0;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.section-one-item-lock-position {
+    float: right;
+    width: 320px;
+    height: 20px;
+}
+
+.section-one-item-one,
+.section-one-item-two,
+.section-one-item-three,
+.section-one-item-four {
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+
+.section-one-item-one img,
+.section-one-item-two img,
+.section-one-item-three img,
+.section-one-item-four img {
+    height: 15px;
+}
+
+.section-one-item-one p,
+.section-one-item-two p,
+.section-one-item-three p,
+.section-one-item-four p {
+    display: inline-block;
+    font-size: 13px;
+}
+
+/* конец section one начало section two ------------------------------ */
+.section-two {
+    height: 1500px;
+    background-color: black;
+    min-width: 1200px;
+}
+
+/* позиция второй секции ------------------------------ */
+.section-two-lock-position {
+    width: 90%;
+    min-width: 1200px;
+    background-color: black;
+    margin: 0 auto 0 auto;
+    color: #FFFFFF;
+}
+
+/* тект второй секции ------------------------------ */
+.section-two-text {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-two-text h2 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.section-two-text p {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+/* начало боков второй секции ------------------------------ */
+.section-two-block {
+    margin-top: 35px;
+    background-color: black;
+    height: 1240px;
+}
+
+.section-two-block-one {
+    position: relative;
+    background-image: url(../image/section-two-block-one-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 45%;
+    height: 600px;
+    float: left;
+    margin: 0 0 0 3.6%;
+}
+
+.section-two-block-two {
+    position: relative;
+    background-image: url(../image/section-two-block-two-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 45%;
+    height: 600px;
+    float: left;
+    margin: 0 0 0 2%;
+}
+
+.section-two-block-three {
+    position: relative;
+    background-image: url(../image/section-two-block-three-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 45%;
+    height: 600px;
+    float: left;
+    margin: 40px 0 0 3.6%;
+}
+
+.section-two-block-four {
+    position: relative;
+    background-image: url(../image/section-two-block-four-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 45%;
+    height: 600px;
+    float: left;
+    margin: 40px 0 0 2%;
+}
+
+/* текст блоков второй секции ------------------------------ */
+.section-two-block-position-text {
+    position: absolute;
+    bottom: 30px
+}
+
+.section-two-block-h3,
+.section-two-block-h3,
+.section-two-block-h3,
+.section-two-block-h3 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 350px 35px 0 35px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.section-two-block-p {
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 35px 0 35px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* кнопки блоков второй секции ------------------------------ */
+.section-two-block-button {
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* сброс стилей браузера у button  */
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: middle;
+    margin: 20px 35px 0 35px;
+    border: 0;
+    border-radius: 12px;
+    background: #FFFFFF;
+    color: black;
+    padding: 6px 115px 0 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.section-two-block-one-button-p,
+.section-two-block-two-button-p,
+.section-two-block-three-button-p,
+.section-two-block-four-button-p {
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    padding: 3px 0 0 8px;
+    font-weight: 500;
+}
+
+/* псевдоклассы блоков второй секции ------------------------------ */
+button.section-two-block-button:hover,
+button.section-two-block-button:hover,
+button.section-two-block-button:hover,
+button.section-two-block-button:hover {
+    background-color: rgb(89, 180, 85);
+}
+
+/* начало section tree ------------------------------ */
+.section-three {
+    position: relative;
+    height: 800px;
+    min-width: 1200px;
+    background-image: url(../image/section-three-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+    color: #FFFFFF;
+}
+
+/* текст третьей секции ------------------------------ */
+.section-three h3 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    left: 68%;
+    top: 300px;
+}
+
+.section-three-text-p {
+    position: absolute;
+    width: 22%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    right: 14%;
+    left: 70%;
+    top: 335px;
+}
+
+/* item третьей секции ------------------------------ */
+.section-three-item {
+    position: absolute;
+    top: 730px;
+    width: 100%;
+    height: 20px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.section-three-item-lock-position {
+    float: right;
+    width: 300px;
+    height: 20px;
+}
+
+.section-three-item-one,
+.section-three-item-two,
+.section-three-item-three,
+.section-three-item-four {
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+
+.section-three-item p {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.section-three-item img {
+    height: 15px;
+}
+
+/* начало section four ------------------------------ */
+.section-four {
+    height: 750px;
+    width: 100%;
+    min-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Poppins', sans-serif;
+}
+/* левый блок section four ------------------------------ */
+.section-four-section-left {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.section-four-section-left-text-position {
+    position: relative;
+    margin: 250px 12% 0 12%;
+}
+
+.section-four-section-left h3 {
+    font-size: 24px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-four-section-left h2 {
+    font-size: 36px;
+    font-weight: 350;
+    padding: 0 0 10px 0;
+}
+
+.section-four-section-left p {
+    font-size: 16px;
+    padding: 0 0 20px 0;
+}
+
+.section-four-section-left button {
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* сброс стилей браузера у button  */
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: middle;
+    margin: 0 0 0 0;
+    border: 0;
+    border-radius: 12px;
+    background: #FFFFFF;
+    color: black;
+    padding: 6px 120px 0 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.section-four-button-p {
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: 500;
+}
+
+button.section-four-button:hover {
+    background-color: rgb(89, 180, 85);
+}
+/* правый блок section four ------------------------------ */
+.section-four-section-right {
+    position: relative;
+    background-image: url(../image/section-four-section-left-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-four-item {
+    position: absolute;
+    top: 685px;
+    width: 100%;
+    height: 20px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.section-four-item-lock-position {
+    float: right;
+    width: 320px;
+    height: 20px;
+}
+
+.section-four-item-one,
+.section-four-item-two,
+.section-four-item-three,
+.section-four-item-four {
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+
+.section-four-item p {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.section-four-item img {
+    height: 15px;
+}
+
+/* section five ------------------------------ */
+.section-five {
+    position: relative;
+    height: 800px;
+    min-width: 1200px;
+    background-image: url(../image/section-five-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+    color: #FFFFFF;
+}
+
+/* текст пятой секции ------------------------------ */
+.section-five h3 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    left: 68%;
+    top: 300px;
+}
+
+.section-five-text-p {
+    position: absolute;
+    width: 22%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    right: 14%;
+    left: 70%;
+    top: 335px;
+}
+
+/* item пятой секции ------------------------------ */
+.section-five-item {
+    position: absolute;
+    top: 750px;
+    width: 100%;
+    height: 20px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.section-five-item-lock-position {
+    float: right;
+    width: 350px;
+    height: 20px;
+}
+
+.section-five-item-one,
+.section-five-item-two,
+.section-five-item-three,
+.section-five-item-four {
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+
+.section-five-item p {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.section-five-item img {
+    height: 15px;
+}
+
+/* section six ------------------------------ */
+.section-six {
+    position: relative;
+    height: 700px;
+    min-width: 1200px;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.section-six h2 {
+    padding: 100px 0 0 0;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.section-six h4 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #ccc;
+    text-align: center;
+}
+/* section six logo ------------------------------ */
+.section-six-logo-lock-position {
+    position: relative;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.section-six-logo-one img {
+    padding: 0 0 0 4%;
+    position: absolute;
+    top: 140px;
+    height: 45px;
+}
+
+.section-six-logo-two img {
+    padding: 0 0 0 5%;
+    position: absolute;
+    top: 100px;
+    height: 100px;
+}
+
+.section-six-logo-three img {
+    padding: 0 0 0 4%;
+    position: absolute;
+    top: 150px;
+    height: 30px;
+}
+
+.section-six-logo-four img {
+    padding: 0 0 0 4%;
+    position: absolute;
+    top: 130px;
+    height: 50px;
+}
+
+.section-six-logo-five img {
+    padding: 0 0 0 3%;
+    position: absolute;
+    top: 130px;
+    height: 50px;
+}
+
+/* section seven ------------------------------ */
+.section-seven {
+    position: relative;
+    height: 800px;
+    min-width: 1200px;
+    background-image: url(../image/section-seven-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+    color: #FFFFFF;
+}
+
+/* текст седьмой секции ------------------------------ */
+.section-seven h3 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    left: 68%;
+    top: 300px;
+}
+
+.section-seven-text-p {
+    position: absolute;
+    width: 22%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    right: 14%;
+    left: 70%;
+    top: 335px;
+}
+
+/* item седьмой секции ------------------------------ */
+.section-seven-item {
+    position: absolute;
+    top: 750px;
+    width: 100%;
+    height: 20px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.section-seven-item-lock-position {
+    float: right;
+    width: 300px;
+    height: 20px;
+}
+
+.section-seven-item-one,
+.section-seven-item-two,
+.section-seven-item-three,
+.section-seven-item-four {
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+
+.section-seven-item p {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.section-seven-item img {
+    height: 15px;
+}
+
+/* section eight ------------------------------ */
+.section-eight {
+    position: relative;
+    height: 500px;
+    min-width: 1200px;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.section-eight h2 {
+    padding: 130px 0 0 0;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-eight h4 {
+    padding: 20px 0 0 0;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #ccc;
+}
+/* section eight кнопка ------------------------------ */
+.section-eight-lock-position-button {
+    width: 165px;
+    height: 45px;
+    margin: 25px auto 0 auto;
+}
+
+.section-eight button {
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* сброс стилей браузера у button  */
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: middle;
+    margin: 0 0 0 0;
+    border: 0;
+    border-radius: 12px;
+    background: #FFFFFF;
+    color: black;
+    padding: 6px 125px 0 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.section-eight-button-p {
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: 500;
+}
+
+button.section-eight-button:hover {
+    background-color: rgb(89, 180, 85);
+}
+
+/* footer ------------------------------ */
+footer {
+    position: relative;
+    height: 800px;
+    min-width: 1200px;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.footer {
+    position: absolute;
+    height: 600px;
+    width: 80%;
+    top: 100px;
+    left: 10%;
+    right: 10%;
+    background-color: #000000;
+}
+
+/* footer top ------------------------------ */
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer-top-right {
+    padding: 0 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ccc;
+}
+
+.footer-top-right p {
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.footer-top-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-top-left p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px 0 0 0;
+    font-weight: 300;
+}
+
+.footer-top-left-one p {
+    padding: 10px 0 0 60px;
+}
+
+.footer-top-left-label {
+    padding: 0 0 0 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: 25 0;
+    letter-spacing: 2px;
+}
+
+/* footer mid ------------------------------ */
+.footer-mid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-mid-right h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 20px 0 0 0;
+}
+
+.footer-mid-right p {
+    color: #ccc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 30px 0 20px 0;
+}
+
+.footer-mid-left {
+    position: relative;
+}
+
+.footer-mid-left input {
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* сброс стилей браузера */
+    height: 50px;
+    width: 500px;
+    font-family: 'Poppins', sans-serif;
+    margin: 35px 0 0 0;
+    border: 0 0 0 0;
+    border-radius: 12px;
+    background: #FFFFFF;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}
+
+.footer-mid-left img {
+    position: absolute;
+    top: 46px;
+    right: 10px;
+}
+
+/* footer bot ------------------------------ */
+.footer-bot {
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-bot p {
+    float: left;
+    padding: 50px 0 0 0;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.footer-bot span {
+    color: #898989;
+}
+
+.footer-bot-contact {
+    float: right;
+    padding: 45px 100px 0 0;
+}
+
+.footer-bot-contact img {
+    height: 40px;
+    padding: 0 0 0 30px;
+}
